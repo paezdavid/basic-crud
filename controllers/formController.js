@@ -12,7 +12,6 @@ exports.addBook = function(req, res) {
 
     newBook.save((err, data) => {
         if (err) console.log(err)
-        console.log(data)
         console.log("saved!")
         res.redirect('/')
     })
