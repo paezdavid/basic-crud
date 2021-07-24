@@ -1,6 +1,9 @@
 {
   "name": "book-inventory",
   "version": "0.0.0",
+  "engines": {
+    "node": "10.19.0"
+  },
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
