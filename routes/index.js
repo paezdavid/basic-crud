@@ -8,4 +8,9 @@ router.get('/', indexController.getBooks);
 
 router.get('/book/:id', indexController.getSingleBook)
 
+router.post('/delete/:id', indexController.deleteBook)
+
+router.get('/update/:id', indexController.findOne)
+router.post('/update/:id', indexController.updateOne)
+
 module.exports = router;
