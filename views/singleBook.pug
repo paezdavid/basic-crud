@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    .wrapper 
+        header 
+            div
+                h1 Operaciones CRUD.
+            nav 
+                a(href="/form")  CREATE 
+                a(href="/")  READ
+
+        main 
+            h2 #{book.bookName}
+            h3 Autor: #{book.author}
+            h3 Género: #{book.genre}
+            h3 Páginas: #{book.pages}
+            h3 Año: #{book.year}

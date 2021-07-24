@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    .wrapper 
+        header 
+            div
+                h1 Operaciones CRUD.
+            nav 
+                a(href="/form")  CREATE 
+                a(href="/")  READ
+                
+
+        main 
+            h2 CREATE
+            p En esta sección creo un nuevo documento para mi database mediante un formulario.
+            h2 Añadir nuevo libro 
+
+            .formContainer 
+                form(action="/form" method="post") 
+                    input(type="text" placeholder="Título" required name="bookName")
+                    input(type="text" placeholder="Autor" required name="author")
+                    input(type="text" placeholder="Género" required name="genre")
+                    input(type="text" placeholder="Páginas" required name="pages")
+                    input(type="text" placeholder="Año" required name="year")
+
+                    input(type="submit" value="Añadir!")
